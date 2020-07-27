@@ -26,7 +26,7 @@ plot(subset_powerdata$Time,subset_powerdata$Voltage,type = "l",xlab = "datetime"
 plot(subset_powerdata$Time,as.numeric(as.character(subset_powerdata$Sub_metering_1)),type = "l",xlab = "", ylim = c(0,30),ylab = "Energy sub metering",main = "Energy mub metering")
 lines(subset_powerdata$Time,as.numeric(as.character(subset_powerdata$Sub_metering_2)),col = "Red")
 lines(subset_powerdata$Time,as.numeric(as.character(subset_powerdata$Sub_metering_3)),col = "Blue")
-legend("topright",legend = c("Sub_metering_1","Sub_metering_2","Sub_metering_3"),col = c("Black","Red","Blue"),lty = 1)
+legend("topright",legend = c("Sub_metering_1","Sub_metering_2","Sub_metering_3"),col = c("Black","Red","Blue"),lty = 1,box.lty=0)
 
 #plot4
 plot(subset_powerdata$Time,subset_powerdata$Global_reactive_power,type = "l",xlab = "datetime")
